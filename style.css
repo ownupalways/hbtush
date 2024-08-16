@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 header {
@@ -13,12 +14,19 @@ header {
     position: relative;
 }
 
+.landing-page:has(.icons) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .landing-page .icons{
     text-align: center;
     padding-top: 2em;
     width: 200px;
-    margin: auto;
     display: flex;
+    position: fixed;
+    bottom: 40px;
 }
 
 .landing-page .icons > i{

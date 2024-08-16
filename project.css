@@ -1,6 +1,9 @@
-.project-page {
-    padding-left: 50px;
-}
+.project-page .topic-about {
+    padding-top: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: small;
+} 
 
 .project-page .icons{
     text-align: center;
@@ -26,5 +29,59 @@
 
 .project-page .icons > i:hover{
     background-color: gray;
+    color: #fff;
+}
+
+
+.project-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-contents .project-boxes {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.project-contents .project-boxes .project-boxesInner { 
+    width: 100%;
+}
+
+.project-contents .project-boxes .project-boxesInner img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.project-contents .project-boxes .project-boxesInner .project{ 
+    width: 100%;
+}
+
+.project-contents .project-boxes .project-boxesInner .project h3{ 
+    text-align: center; 
+    padding: 0.7em 0;
+}
+
+.project-contents .project-boxes .project-boxesInner .project .btnContainer{ 
+    display: flex;
+    justify-content: space-around;
+}
+.project-contents .project-boxes .project-boxesInner .project .btn { 
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    background-color: #fff;
+    color: black;
+    padding: 8px;
+    width: 90px;
+    transition: all 0.8s;
+    font-weight: bold;
+}
+
+.project-contents .project-boxes .project-boxesInner .project .btn:hover { 
+    background-color: black;
     color: #fff;
 }

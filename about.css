@@ -1,13 +1,20 @@
-.about-page {
-    padding-left: 50px;
+.about-page:not(.icons) {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
 }
 
+.about-page:has(.icons) {
+    align-items: center;
+}
 .about-page .icons{
     text-align: center;
-    padding-top: 2em;
+    padding-top: 5em;
     width: 200px;
-    margin: auto;
     display: flex;
+    position: fixed;
+    bottom: 40px;
 }
 
 .about-page .icons > i{
@@ -27,4 +34,63 @@
 .about-page .icons > i:hover{
     background-color: gray;
     color: #fff;
+}
+
+.about-page .topic-about {
+    padding-top: 1.5em;
+    margin-bottom: -1em;
+    text-align: center;
+    font-size: small;
+}
+.contents {
+    width: 800px;
+    display: flex;
+    gap: 40px;
+}
+.contents:not(.myImage) { 
+    align-items: center;
+}
+
+.contents .myImage {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.contents .myImage img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contents .content-boxes {
+  width: 100%;
+    /* border: 1px solid black; */
+    /* padding: 0 10px; */
+    /* margin-bottom: 0; */
+}
+
+.contents .content-boxes .boxes {
+    display: flex;
+    width: 400px;
+    gap: 20px;
+    margin-bottom: 1em;
+}
+
+.contents .content-boxes .boxes .content-box1 {
+    width:300px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: small;
+}
+
+.contents .content-boxes .content-box3{
+    width: 420px;
+}
+
+.contents .content-boxes.content-box3 p{
+    display: flex;
+    flex-wrap: wrap;
 }
