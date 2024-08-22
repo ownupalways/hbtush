@@ -1,8 +1,20 @@
+:root {
+    --currentPrimaryColor1:white;
+    --currentSecondaryColor1:black;
+    --fontSmall: 1.25em;
+    --fontBig:1.5em;
+    --fontMedium:1em;
+    --fontTiny:.8em;
+    --bgHoverGray: rgba(128, 128, 128, 0.5);
+    --bgHoverBlack:var(--currentSecondaryColor1); 
+    --bgHoverWhite:var(--currentPrimaryColor1);
+}
 .project-page .topic-about {
     padding-top: 1.5em;
     margin-bottom: 1em;
     text-align: center;
     font-size: small;
+    color: var(--currentSecondaryColor1);
 } 
 
 .project-page .icons-container{
@@ -30,6 +42,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.9s;
+    color: var(--currentSecondaryColor1);
 }
 
 .project-page .icons > i:hover{
@@ -48,7 +61,7 @@
 
 .project-contents .project-boxes {
     width: 200px;
-    border: 1px solid black;
+    border: 1px solid var(--currentSecondaryColor1);
     border-radius: 30px;
     padding: 20px;
 }
@@ -76,11 +89,11 @@
     justify-content: space-around;
 }
 .project-contents .project-boxes .project-boxesInner .project .btn { 
-    border: 1px solid black;
+    border: 1px solid var(--currentSecondaryColor1);
     border-radius: 20px;
     outline: none;
-    background-color: #fff;
-    color: black;
+    background-color: var(--currentPrimaryColor1);
+    color: var(--currentSecondaryColor1);
     padding: 8px;
     width: 90px;
     transition: all 0.8s;
@@ -88,6 +101,6 @@
 }
 
 .project-contents .project-boxes .project-boxesInner .project .btn:hover { 
-    background-color: black;
-    color: #fff;
+    background-color: var(--currentSecondaryColor1);
+    color: var(--currentPrimaryColor1);
 }

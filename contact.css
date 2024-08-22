@@ -1,3 +1,15 @@
+:root {
+    --currentPrimaryColor1:white;
+    --currentSecondaryColor1:black;
+    --fontSmall: 1.25em;
+    --fontBig:1.5em;
+    --fontMedium:1em;
+    --fontTiny:.8em;
+    --bgHoverGray: rgba(128, 128, 128, 0.5);
+    --bgHoverBlack:var(--currentSecondaryColor1); 
+    --bgHoverWhite:var(--currentPrimaryColor1);
+}
+
 .contact-page .icons-container{
     width: 150px;
     margin: auto;
@@ -34,11 +46,12 @@
     justify-content: center;
     align-items: center;
     transition: all 0.9s;
+    color: var(--currentSecondaryColor1);
 }
 
 .contact-page .icons > i:hover{
     background-color: gray;
-    color: #fff;
+    color: var(--currentSecondaryColor1);
 }
 
 .contact-page .topic-contact {
@@ -46,6 +59,7 @@
     margin-bottom: 1em;
     text-align: center;
     font-size: small;
+    color: var(--currentSecondaryColor1);
 }
 
 .contents {
@@ -67,7 +81,6 @@
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    mix-blend-mode: color-burn;
 }
 
 .contents .content-boxes {

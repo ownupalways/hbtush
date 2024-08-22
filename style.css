@@ -325,11 +325,11 @@ nav ul > i {
         border-radius: none;
     }
 
-    nav ul li > a:hover  {
+    /* nav ul li > a:hover  {
         font-size: var(--fontSmall);
         color: var(--currentPrimaryColor1);
         letter-spacing: 4px;
-    }
+    } */
 
     #check:checked ~ ul {
         left: 0;

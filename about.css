@@ -1,3 +1,24 @@
+/* @import url("style.css"); */
+
+:root {
+    --currentPrimaryColor1:white;
+    --currentSecondaryColor1:black;
+    --fontSmall: 1.25em;
+    --fontBig:1.5em;
+    --fontMedium:1em;
+    --fontTiny:.8em;
+    --bgHoverGray: rgba(128, 128, 128, 0.5);
+    --bgHoverBlack:var(--currentSecondaryColor1); 
+    --bgHoverWhite:var(--currentPrimaryColor1);
+}
+/* .MyBody {
+    background-color: var(--currentPrimaryColor1);
+} */
+
+.newTheme {
+    --currentPrimaryColor1:black;
+    --currentSecondaryColor1:white;
+}
 
 .about-page:not(.icons) {
     display: flex;
@@ -48,7 +69,7 @@
     margin-bottom: -1em;
     text-align: center;
     font-size: small;
-    color: var(--currentPrimaryColor1);
+    color: var(--currentSecondaryColor1);
 }
 .contents {
     width: 800px;
@@ -86,8 +107,8 @@
 }
 .contents .content-boxes .boxes .content-box1 {
     width:300px;
-    border: 1px  var(--currentPrimaryColor1) solid;
-    color: var(--currentPrimaryColor1);
+    border: 1px  solid var(--currentSecondaryColor1);
+    color: var(--currentSecondaryColor1);
     padding: 20px;
     border-radius: 6px;
     text-align: center;

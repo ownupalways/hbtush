@@ -1,3 +1,20 @@
+:root {
+    --currentPrimaryColor1:white;
+    --currentSecondaryColor1:black;
+    --fontSmall: 1.25em;
+    --fontBig:1.5em;
+    --fontMedium:1em;
+    --fontTiny:.8em;
+    --bgHoverGray: rgba(128, 128, 128, 0.5);
+    --bgHoverBlack:var(--currentSecondaryColor1); 
+    --bgHoverWhite:var(--currentPrimaryColor1);
+}
+
+.newTheme {
+    --currentPrimaryColor1:black;
+    --currentSecondaryColor1:white;
+}
+
 .experience-page {
    width: 700px;
    margin: auto;
@@ -8,12 +25,12 @@
     margin: auto;
 }
 
-.experience-page .icons {
+.experience-page .icons-container .icons {
     display: flex;
     /* justify-content: center; */
 }
 
-.experience-page .icons > i{
+.experience-page .icons-container .icons > i{
     margin-right: 10px;
     font-size: 18px;
     padding: 5px;
@@ -24,6 +41,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.9s;
+    color: var(--currentSecondaryColor1);
 }
 
 .experience-page .icons > i:hover{
@@ -35,6 +53,7 @@
     padding: 1em 0;
     text-align: center;
     font-size: small;
+    color: var(--currentSecondaryColor1);
 }
 .experience-contents {
     display: flex;
@@ -57,7 +76,8 @@
 }
 .experience-contents .boxes .boxesInner .experience { 
     width: 250px;
-    border: 1px solid black;
+    border: 1px solid var(--currentSecondaryColor1);
+    color: var(--currentSecondaryColor1);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -79,4 +99,5 @@
 .experience-contents .boxes .content-box3{
     word-wrap: wrap;
     padding-left: 5px;
+    color: var(--currentSecondaryColor1);
 }
