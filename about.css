@@ -32,30 +32,12 @@ body {
      color:var(--currentPrimaryColor1);
  }
  
-main:not(.icons) {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    margin: auto;
-}
-
-
-main .topic {
-    width: fit-content;
-    padding-top: 1.5em;
-    margin-bottom: -1em;
-    border: 1px solid currentColor;
-}
-
-main .topic > p, main .topic > h2 {
-    text-align: center;
-    color: inherit;
-}
 .contents {
-    width: 800px;
+    /* width: 800px; */
     display: flex;
     gap: 40px;
-    margin:auto;
+    /* margin:auto; */
+    transition: all 1s;
 }
 .contents:not(.myImage) { 
     align-items: center;
@@ -104,4 +86,5 @@ main .topic > p, main .topic > h2 {
     display: flex;
     flex-wrap: wrap;
     color: inherit;
+    text-align: justify;
 }

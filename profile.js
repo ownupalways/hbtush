@@ -19,9 +19,10 @@ function changeBackgroundToBlack() {
     }
     localStorage.setItem('theme', changedTheme);
 }
-
+let mainDoc = document.getElementsByTagName('main')[0]
 // Apply the saved theme on page load
 document.addEventListener('DOMContentLoaded', () => {
+    mainDoc.style.scale = '1'
     const savedTheme = localStorage.getItem('theme');
     updatedTheme(savedTheme);
 
@@ -31,3 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         themeBlack.src = "image/moon.png"
     }
 });
+
+// IMAGE ICON DISPLAY:NONE ON MENU CLICK
+
+let menuIcon = document.getElementsByClassName('checkBtn')[0]
+let imageIcon = document.getElementsByClassName('image2')[0]
+
+menuIcon.addEventListener('click', imageSwitch)
+
+function imageSwitch() {
+    imageIcon.classList.toggle('switchImage')
+}
