@@ -34,8 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .experience-contents .boxes {
@@ -46,12 +45,12 @@ body {
 .experience-contents .boxes .boxesInner {
     display: flex;
     gap: 40px;
-    /* padding-bottom: 10px; */
     transition: all 0.8s;
     cursor: pointer;
 }
+
 .experience-contents .boxes .boxesInner .experience { 
-    width: 250px;
+    width:clamp(250px - 20%);
     border: 1px solid currentColor;
     color: inherit;
     border-radius: 15px;
@@ -73,8 +72,11 @@ body {
 }
 
 .experience-contents .boxes .content-box3{
-    word-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 5px;
     color:inherit;
     text-align: justify;
+    padding-top: 10px;
+    line-height: 25px;
 }
