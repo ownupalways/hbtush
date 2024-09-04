@@ -46,8 +46,9 @@ body {
 .experience-contents .boxes .boxesInner {
     display: flex;
     gap: 40px;
-    padding-bottom: 10px;
-
+    /* padding-bottom: 10px; */
+    transition: all 0.8s;
+    cursor: pointer;
 }
 .experience-contents .boxes .boxesInner .experience { 
     width: 250px;

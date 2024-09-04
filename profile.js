@@ -19,10 +19,10 @@ function changeBackgroundToBlack() {
     }
     localStorage.setItem('theme', changedTheme);
 }
-let mainDoc = document.getElementsByTagName('main')[0]
+// let mainDoc = document.getElementsByTagName('main')[0]
 // Apply the saved theme on page load
 document.addEventListener('DOMContentLoaded', () => {
-    mainDoc.style.scale = '1'
+    // mainDoc.style.scale = '1'
     const savedTheme = localStorage.getItem('theme');
     updatedTheme(savedTheme);
 

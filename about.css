@@ -33,11 +33,10 @@ body {
  }
  
 .contents {
-    /* width: 800px; */
     display: flex;
     gap: 40px;
-    /* margin:auto; */
     transition: all 1s;
+    border: 1px solid currentColor;
 }
 .contents:not(.myImage) { 
     align-items: center;
@@ -57,10 +56,13 @@ body {
 
 .contents .content-boxes {
   width: 100%;
+  margin: 0 20px;
+
 }
 
 .contents .content-boxes .boxes {
     display: flex;
+    justify-content: center;
     width: 400px;
     gap: 20px;
     margin-bottom: 1em;
