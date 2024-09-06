@@ -347,42 +347,48 @@ nav ul > i {
         padding: 29px  100% 29px 40px;
     }
 
-    main {
-        height: 120vh;
+    .landing-page {
+        height: 80vh;
         padding-top: 0;
     }
-    .icons-container {
-        top: 30em;
+
+    /* ABOUT PAGE */
+    .about-page {
+        height: 100vh;
+        padding-top: 0;
     }
-    
+    .contents-about .myImage {
+        width: 300px;
+    }
+
+    .icons-container {
+        top: 38em;
+    }
+
+    /* EXPERIENCE PAGE */
+    .experience-page {
+        height: 110vh;
+        padding-top: 0;
+    }  
     .experience-contents  {
           margin-top: -5px;
           margin-bottom: 0;
     }
+
+    /* PROJECT PAGE */
     .project-contents .project-boxes {
         width: 180px;
         padding: 10px;
         border-radius: 15px;
     }
-    
     .project-contents .project-boxes .project-boxesInner .project .btn { 
         padding: 4px;
         width: 80px;
         font-size: 0.7em;
     }
+}
 
 /* CONTACT PAGE */
-/* .contents {
-    width: 80%;
-    margin: auto;
-    justify-content: center;
-    } */
-
-    .contents .myImage {
-        width: 300px;
-    }
-     
-}
 
 @media (max-width:858px) {
     .checkBtn{
@@ -436,6 +442,11 @@ nav ul > i {
     nav ul > #image3 img {
         width: 100%;
     }
+
+    /* ABOUT PAGE */
+    .contents-about {
+        gap: 0;
+    }
 }
 
 
@@ -450,16 +461,9 @@ nav ul > i {
         right: 50px;
     }
 
-       header {
-        margin-bottom: 3em;
-    }
     label.logo > a{
         font-size: var(--fontMedium);
         margin:0 5px;
-    }
-
-    main {
-        width: 100%;
     }
 
     .my-container {
@@ -515,22 +519,17 @@ nav ul > i {
 
     /* CONTACT PAGE */
     .contact-page {
-        height: 100vh;
-    }
-    .contents {
-        padding-top: 10px;
-        width: initial;
+        height: 80vh;
     }
 
-    .contents .content-boxes {
-       display: flex;
-       /* flex-direction: column; */
-       justify-content: center;
-       align-items: center;
-       margin: 0;
+    .contact-contents {
+        width: 100%;
+    }
+    .contact-contents .myImage {
+        display: none;
     }
 
-    .contents .myImage {
+    .contents-about .myImage {
         display: none;
     }
 }
@@ -588,40 +587,71 @@ nav ul > i {
         left: 0;
     }
 
+    /* HOME PAGE */
+    .landing-page {
+        height: 80vh;
+    }
+
+    .landing-page  ~ .icons-container {
+        top: 38em;
+    }
     /* CONTACT */
-    .contents {
-        margin-top: 15px;
-        /* width: 500px; */
-        display: flex;
-        justify-content: center;
-    }
-
     .contact-page {
-        height: 100vh;
+        height: 70vh;
     }
 
-    .contents .content-boxes {
-        width: 400px;
-        margin: 0 10px;
-      }
-      
-    /* ABOUT PAGE */
-    .contents .content-boxes .content-box3 p {
-        margin: 0 20px;
+    .contact-page  ~ .icons-container {
+        top: 38em;
     }
-    .contents .content-boxes .boxes {
-        display: flex;
-        flex-wrap: wrap;
-    } 
+
+    /* ABOUT PAGE */
+    .about-page {
+        height: 87vh;
+        padding-top: 0;
+    }
+
+    .contents-about .content-about-boxes .about-boxes {
+        display: block;
+        margin: auto;
+    }
+
+    .contents-about .content-about-boxes .content-about-box3 p{
+        padding: 0 20px;
+        text-align: justify;
+    }
+    
+
+    /* PROJECT PAGE */
+    .project-contents {
+        flex-direction: column;
+    }
 
     .project-page {
-        height: 205vh;
+        height: 185vh;
+        padding-top:0 ;
+        margin: 0;
+    }
+
+    .project-page ~ .icons-container {
+        top: 38em;
+    }
+
+    .project-contents .project-boxes {
+        padding: 20px;
     }
 
     .icons-container {
         top: 32em;
     }
+
     /* EXPERIENCE */
+    .experience-page {
+        height: 150vh;
+    }
+
+    .experience-page  ~ .icons-container {
+        top: 38em;
+    }
     .experience-contents .boxes .boxesInner{
         flex-direction: column;
         justify-content: center;
@@ -632,14 +662,14 @@ nav ul > i {
         width: 100%;
         padding: 0 20px;
     }
-    /* PROJECT PAGE */
-    .project-contents {
-        flex-direction: column;
-    }
+   
 }
 
 
 @media (max-width:350px) {
+    header {
+        margin: 0;
+    }
     nav ul {
         position: fixed;
         background-color: black;
@@ -654,9 +684,9 @@ nav ul > i {
         padding: 0;
     }
 
-    main {
-        height: 200vh;
-    }
+    /* main {
+        height: 120vh;
+    } */
 
     nav ul li {
         display: block;
@@ -687,14 +717,22 @@ nav ul > i {
     }
 
      /* ABOUT PAGE */
-    .contents .content-boxes .boxes {
+    .contents-about .content-boxes .boxes {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
+    /* EXPERIENCE */
+    .experience-page {
+        height: 160vh;
+    }
     /* CONTACT PAGE */
-    .contents .content-boxes {
+    .contact-contents .contact-content-boxes {
         width: 100%;
-        margin: 0 10px;
+        margin: 0 20px;
       }
 }
 
@@ -754,4 +792,32 @@ nav ul > i {
         padding: 5px;
         margin-right: 5px;
     }
+
+    /* ABOUT PAGE */
+
+    .contents-about .about-boxes .content-about-box3 {
+        padding: 0 10px;
+        margin-top: 15px;
+    }
+    .contents-about .content-about-boxes .about-boxes .content-about-box1 {
+        width: unset;
+        margin: 0 10px;
+    }
+
+    .contents-about .content-about-boxes .content-about-box3 p{
+        width: auto;
+        padding: 0;
+        text-align: justify;
+    }
+
+    /* EXPERIENCE PAGE */
+    .experience-contents .boxes {
+        padding: 0;
+    }
+    .experience-contents .boxes .boxesInner .experience {
+        padding: 0;
+    }
+   
+
+
 }

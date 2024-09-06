@@ -32,45 +32,48 @@ body {
      color:var(--currentPrimaryColor1);
  }
  
-.contents {
+.contents-about{
     display: flex;
-    gap: 40px;
+    justify-content: center;
     transition: all 1s;
-    border: 1px solid currentColor;
+    gap: 10px;
+    /* flex-wrap: wrap; */
 }
-.contents:not(.myImage) { 
+
+.contents-about:not(.myImage) { 
     align-items: center;
 }
 
-.contents .myImage {
+.contents-about .myImage {
     width: 300px;
     border-radius: 10px;
 }
 
-.contents .myImage img {
+.contents-about .myImage img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.contents .content-boxes {
-  width: 100%;
-  margin: 0 20px;
-
+.contents-about .content-about-boxes {
+    display: block;
+    gap: 10px;
 }
 
-.contents .content-boxes .boxes {
+.contents-about .content-about-boxes .about-boxes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 400px;
     gap: 20px;
     margin-bottom: 1em;
 }
-.contents .content-boxes .boxes .content-box1 i{
+
+.contents-about .content-about-boxes .about-boxes .content-about-box1 i{
     color: inherit;
 }
-.contents .content-boxes .boxes .content-box1 {
+.contents-about .content-about-boxes .about-boxes .content-about-box1 {
     width:300px;
     border: 1px  solid currentColor;
     color: inherit;
@@ -80,11 +83,13 @@ body {
     font-size: small;
 }
 
-.contents .content-boxes .content-box3{
+.contents-about .content-about-boxes .content-about-box3{
     width: 420px;
+    word-wrap: break-word;
+    margin: 0 10px;
 }
 
-.contents .content-boxes .content-box3 p{
+.contents-about .content-about-boxes .content-about-box3 p{
     display: flex;
     flex-wrap: wrap;
     color: inherit;
