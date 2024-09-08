@@ -1,3 +1,7 @@
+document.addEventListener('touchstart', e => {
+    e.preventDefault()
+})
+
 let themeBlack = document.querySelector(".theme #nightLight")
 
 
