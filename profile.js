@@ -1,10 +1,12 @@
 document.addEventListener('touchstart', e => {
     e.preventDefault()
+    ;[...e.changedTouches].forEach(touch => {
+        document.top = `${touch.pageY}px`
+        document.top = `${touch.pageX}px`
+        document.id = touch.identifier
+    });
 })
 
-document.addEventListener('click', e => {
-    e.preventDefault()
-})
 let themeBlack = document.querySelector(".theme #nightLight")
 
 
