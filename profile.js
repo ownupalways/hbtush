@@ -2,7 +2,7 @@ document.addEventListener('touchstart', e => {
     e.preventDefault()
 })
 
-document.addEventListener('pointerenter', e => {
+document.addEventListener('click', e => {
     e.preventDefault()
 })
 let themeBlack = document.querySelector(".theme #nightLight")
