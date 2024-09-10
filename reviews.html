@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Godwin J. Oluwadipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <i class="fas fa-home"></i>
+                                <span>Godwin J.O.</span>
+                            </a>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="reviews.html" class="active">Reviews</a></li>
+                        </ul>
+                        <button id="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="hamburger" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="reviews-section">
+                <div class="container">
+                    <h1 class="page-title animate__animated animate__fadeInDown">Portfolio Reviews</h1>
+                    <div class="reviews-content">
+                        <div class="reviews-list animate__animated animate__fadeInLeft">
+                            <h2>Recent Reviews</h2>
+                            <div id="reviewsList"></div>
+                        </div>
+                        <div class="review-form animate__animated animate__fadeInRight">
+                            <h2>Add Your Review</h2>
+                            <form id="reviewForm">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="skill">Skill Reviewed</label>
+                                    <select id="skill" name="skill" required>
+                                        <option value="">Select a skill</option>
+                                        <option value="HTML">HTML</option>
+                                        <option value="CSS">CSS</option>
+                                        <option value="JavaScript">JavaScript</option>
+                                        <option value="React">React</option>
+                                        <option value="Node.js">Node.js</option>
+                                        <option value="MongoDB">MongoDB</option>
+                                        <option value="Git-GitHub">Git-GitHub</option>
+                                        <option value="Express JS">Express JS</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rating">Rating</label>
+                                    <div class="star-rating">
+                                        <input type="radio" id="star5" name="rating" value="5" required>
+                                        <label for="star5" title="5 stars"></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4" title="4 stars"></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3" title="3 stars"></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2" title="2 stars"></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1" title="1 star"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">Your Comment</label>
+                                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2023 Godwin J. Oluwadipe. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourhandle" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/yourusername" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="reviews.js"></script>
+</body>
+</html>

@@ -1,82 +1,73 @@
-:root {
-    --fontSmall: 1.25em;
-    --fontBig:1.5em;
-    --fontMedium:1em;
-    --fontTiny:.8em;
-    --bgHoverGray: rgba(128, 128, 128, 0.5);
-    --bgHoverBlack:black; 
-    --bgHoverWhite:white;
+.experience-section {
+    padding: 50px 0;
 }
 
-@property --currentPrimaryColor1 {
-    syntax: "<color>";
-    inherits: true;
-    initial-value: white;
-}
-
-@property --currentSecondaryColor1 {
-    syntax: "<color>";
-    inherits: true;
-    initial-value: black;
-}
-
-body {
-    background-color: var( --currentPrimaryColor1);
-    color: var(--currentSecondaryColor1);
- }
- 
- .newTheme {
-     background-color: var(--currentSecondaryColor1);
-     color:var(--currentPrimaryColor1);
- }
-
-.experience-contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.experience-contents .boxes {
-    gap: 20px;
-    width: 600px;
-}
-
-.experience-contents .boxes .boxesInner {
-    display: flex;
-    gap: 40px;
-    transition: all 0.8s;
-    cursor: pointer;
-}
-
-.experience-contents .boxes .boxesInner .experience { 
-    width:clamp(250px - 20%);
-    border: 1px solid currentColor;
-    color: inherit;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-.experience-contents .boxes .boxesInner .experience .experience-box-contain {
+.experience-grid {
     display: grid;
-    grid-template-columns: 100px 100px;
-    gap: 40px;
-}
-.experience-contents .boxes .boxesInner .experience-box-contain .experience-box{
-    position: relative;
-    display: flex;
-    padding: 5px;
-    font-size: small;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.experience-contents .boxes .content-box3{
+.experience-category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 15px;
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 5px;
-    color:inherit;
-    text-align: justify;
-    padding-top: 10px;
-    line-height: 25px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item i.fa-check-circle {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.skill-info {
+    flex-grow: 1;
+}
+
+.skill-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.skill-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.experience-description {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experience-description p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
