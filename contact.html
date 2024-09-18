@@ -3,112 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Godwin J. Oluwadipe</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="page-wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-content">
-                        <div class="logo">
-                            <a href="index.html">
-                                <i class="fas fa-home"></i>
-                                <span>Godwin J.O.</span>
-                            </a>
-                        </div>
-                        <ul class="nav-links">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="experience.html">Experience</a></li>
-                            <li><a href="project.html">Projects</a></li>
-                            <li><a href="contact.html" class="active">Contact</a></li>
-                            <li><a href="reviews.html">Reviews</a></li>
-                        </ul>
-                        <button id="theme-toggle" aria-label="Toggle dark mode">
-                            <i class="fas fa-moon"></i>
-                        </button>
-                        <button class="hamburger" aria-label="Toggle menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <section class="contact-section">
-                <div class="container">
-                    <h1 class="page-title">Get In Touch</h1>
-                    <div class="contact-content">
-                        <div class="contact-info">
-                            <h2>Contact Information</h2>
-                            <ul class="contact-list">
-                                <li>
-                                    <i class="fas fa-envelope"></i>
-                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-phone"></i>
-                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Ogbomosho North, Oyo State, Nigeria</span>
-                                </li>
-                            </ul>
-                            <div class="social-links">
-                                <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://twitter.com/yourhandle" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://github.com/yourusername" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="contact-form">
-                            <h2>Send Me a Message</h2>
-                            <form id="contactForm">
-                                <div class="form-group">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Your Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Your Message</label>
-                                    <textarea id="message" name="message" rows="5" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <p>&copy; 2023 Godwin J. Oluwadipe. All rights reserved.</p>
-                    <div class="social-links">
-                        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/yourhandle" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/yourusername" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
+<body class="MyBody">
+    <header style="margin-bottom: 2em;">
+        <nav>
+            <div class="theme">
+                <img src="image/moon.png" id="nightLight">
             </div>
-        </footer>
-    </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkBtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">
+                <a href="index.html">
+                <span class="changeMe">
+                    <i class="fa-solid fa-house"></i>Home
+                </span>
+                <span class="myName">Godwin J.O.</span>
+                </a>
+            </label>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-gear"></i>
 
-    <script src="script.js"></script>
+                <div id="image3">
+                    <img src="image/1.jpg" alt="">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <div class="topic">
+             <p>Get In Touch</p>
+             <h2>Contact Me</h2>
+        </div>
+ 
+         <section class="contact-contents">
+             <div class="myImage">
+                 <img src="image/3.jpg">
+             </div>
+             
+             <div class="contact-content-boxes">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Full Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="7"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+    </section>
+ 
+     <div class="image2">
+        <img src="image/1.jpg" alt="">
+    </div>
+     <script src="profile.js"></script>
 </body>
 </html>
