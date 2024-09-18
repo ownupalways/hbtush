@@ -52,3 +52,39 @@ menuIcon.addEventListener('click', imageSwitch)
 function imageSwitch() {
     imageIcon.classList.toggle('switchImage')
 }
+
+// Review js
+
+document.getElementById("reviewForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Get form values
+    const name = event.target.name.value;
+    const review = event.target.review.value;
+
+    // Create new review element
+    const newReview = document.createElement("li");
+    newReview.textContent = `${name}: ${review}`;
+
+    // Append to the review list
+    document.getElementById("reviews").appendChild(newReview);
+
+    // Optionally, save the review to localStorage for persistence
+    const savedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    savedReviews.push({ name, review });
+    localStorage.setItem("reviews", JSON.stringify(savedReviews));
+
+    // Clear the form
+    event.target.reset();
+});
+
+// Load reviews from localStorage when the page loads
+document.addEventListener("DOMContentLoaded", function() {
+    const savedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    savedReviews.forEach(review => {
+        const newReview = document.createElement("li");
+        newReview.textContent = `${review.name}: ${review.review}`;
+        document.getElementById("reviews").appendChild(newReview);
+    });
+});
+
